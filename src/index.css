@@ -1,0 +1,83 @@
+:root {
+  --bg:
+    radial-gradient(circle at top left, rgba(245, 158, 11, 0.08), transparent 30%),
+    radial-gradient(circle at top right, rgba(234, 88, 12, 0.08), transparent 34%),
+    linear-gradient(180deg, #fff8ee 0%, #fffdf8 48%, #fff7ed 100%);
+  --panel-bg: rgba(255, 250, 240, 0.88);
+  --card-bg: rgba(255, 255, 255, 0.74);
+  --input-bg: rgba(255, 255, 255, 0.9);
+  --text: #5e503f;
+  --text-h: #1c1917;
+  --muted: #78716c;
+  --border: rgba(120, 113, 108, 0.2);
+  --accent: #c2410c;
+  --accent-soft: rgba(194, 65, 12, 0.14);
+  --danger: #b91c1c;
+  --sand: #f5e7cc;
+  --shadow-soft: 0 20px 60px rgba(28, 25, 23, 0.08);
+  --shadow-strong: 0 16px 32px rgba(194, 65, 12, 0.22);
+  --sans: 'Segoe UI', 'Trebuchet MS', sans-serif;
+  --heading: Georgia, 'Times New Roman', serif;
+  --mono: 'Cascadia Code', Consolas, monospace;
+  color: var(--text);
+  background: #fff8ee;
+  font: 16px/1.5 var(--sans);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: var(--bg);
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-family: var(--heading);
+  color: var(--text-h);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 5vw, 4.75rem);
+  line-height: 0.95;
+  margin: 10px 0 18px;
+}
+
+h2 {
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  line-height: 1.05;
+}
+
+p {
+  margin: 0;
+}
+
+code {
+  font-family: var(--mono);
+  font-size: 0.92em;
+  color: var(--text-h);
+  background: rgba(28, 25, 23, 0.06);
+  padding: 2px 6px;
+  border-radius: 8px;
+}
